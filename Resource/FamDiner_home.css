@@ -1,0 +1,966 @@
+
+*{
+    box-sizing: border-box;
+    font-family:Tahoma, sans-serif;
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-image: url('./images/background_home.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+/*header--------------------------------------------Header*/
+
+
+.containerheaderr{
+    width: 100%; 
+    background-image: linear-gradient(to right,  #000080, #695980);
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+img.logoimg{
+    width: 200px;
+    height:70px;
+    padding: 2px 3px;
+}
+
+.headerkanan{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.buttonRegis{
+    background-color: #333;
+    color: rgba(255,255,255,1);
+    border-radius: 25px;
+    padding: 6px 25px;
+    font-size: 17px;
+    align-self:center;
+    margin-right: 25px;
+}
+ 
+
+
+
+.buttonLog{
+    background-color: #333;
+    color: rgba(255,255,255,1);
+    border-radius: 25px;
+    padding: 6px 25px;
+    font-size: 17px;
+    align-self:center;
+    margin-right: 20px;
+}
+.regissternamee{
+    text-decoration: none;
+    color: rgba(255,255,255,1)
+}
+.loginName{
+    text-decoration: none;
+    color: rgba(255,255,255,1)
+}
+
+
+@media all and (max-width: 600px){
+    .containerheaderr{
+        width: 100%;
+        background-color: #000080;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+    img.logoimg{
+        width: 200px;
+        height:70px;
+        padding: 2px 3px;
+        margin-top: 15px;
+    }
+    .headerkanan{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+        margin-top: 15px;
+    }
+    .buttonLog{
+        margin-right: 0px;
+    }
+    
+}
+
+
+
+/*.bgblack{
+    background-color: rgba(0,0,0,0.4);
+    background-size: cover;
+}*/
+
+/**
+.top1{
+    position: relative;
+    top: 0px;
+    left: -10px;
+    overflow: hidden;
+}
+.bot1{
+    display: block;
+    margin-top: 100px;
+    position: relative;
+    top:10px;
+    overflow: hidden;
+    left: -110px;
+}
+**/
+
+/*navbar-------------------------------------------------------navbar*/
+header{
+    background-color: white;
+}
+
+ul{
+    margin:0;
+    padding: 0;
+    list-style-type: none;
+    background-color: #333;
+    overflow: hidden;
+}
+
+li{
+    float: left;
+}
+
+li a, .dropbtn {
+    text-decoration: none;
+    color: white;
+    padding: 14px 16px;
+    display: inline-block;
+    text-align: center;
+    width: 120px;
+}
+
+li a:hover, .dropdown:hover .dropbtn{
+    background-color: #1bf5ee;
+    color: black;
+}
+
+
+.dropbtn{
+    display: inline-block;
+}
+.dropdown-content{
+    position: absolute;
+    display: none;
+    min-width: 80px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a{
+    display: block;
+    padding: 12px 23px;
+    background-color: #333;
+    text-align: left;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+.dropdown-content a:hover{
+    background-color: black;
+    color:white;
+}
+/*navbar_about_us-------------------------------------------------------navbar_about_us*/
+
+#about_us li a.activedBackground{
+    background-color: #1bf5ee;
+    color: black;
+}
+
+
+/*navbar_Home-------------------------------------------------------navbar_Home*/
+
+#menuid li a.dropbtn{
+    background-color: #1bf5ee;
+    color: black;
+}
+
+
+/*navbar_Menu-------------------------------------------------------navbar_Menu*/
+#homeFamdiner li a.activedBackground{
+    background-color: #1bf5ee;
+    color: black;
+}
+
+#homeFamdiner footer{
+    display: block;
+    position: relative;
+    margin-top: 200px;
+    margin-bottom: 0;
+}
+
+
+/*bodyHome--------------------------------------------------------BODY_Home*/
+.containertext{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    color: white;
+}
+
+
+.text1{
+    font-weight: bold;
+    font-size: 45px;
+    margin: 0 0 30px 0;
+}
+
+.text2{
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.openmenu{
+    border-radius: 100px;
+    background-color: #333;
+    color: white;
+    font-size: 15px;
+    padding: 9px 15px;
+}
+.openmenu a{
+    color:white;
+    text-decoration: none;
+    padding: 9px 15px;
+}
+
+/*footer---------------------------------------------------footer*/
+
+footer{
+    position: absolute;
+    display:block;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.footcontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #333;
+    padding:10px 0;
+    color: white;
+}
+
+footer img{
+    margin-right: 20px;
+    color: white;
+    width:20px;
+    height: 20px
+}
+.author{
+    margin-top: 5px;
+    font-size: 13px;
+}
+
+/*homeresponsivecss------------------------------------------------Home responsive css*/
+@media all and (max-width: 1024px) {
+    .containertext{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 7%;
+        color: white;
+    }
+    .text1{
+        font-weight: bold;
+        font-size: 35px;
+        margin:  0 40%;
+    }
+    
+    .text2{
+        font-size: 20px;
+        margin-bottom: 40px;
+        margin: 20px 20% 50px 27%;
+        Align-content: center;
+    }
+    
+    .openmenu{
+        margin-left: -1%;
+    }
+}
+
+@media all and (max-width: 630px) {
+    .containertext{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 17%;
+        color: white;
+    }
+    .text1{
+        font-weight: bold;
+        font-size: 28px;
+        margin:  0 40%;
+    }
+    
+    .text2{
+        font-size: 17px;
+        margin: 20px 10% 25px 27%;
+    }
+    
+    .openmenu{
+        margin-left: -1%;
+    }
+}
+
+
+
+
+/*aboutuspage-------------------------------------------------------aboutUs_page--*/
+#about_us{
+    background-image:none;
+    background-repeat:repeat;
+    background-attachment: scroll;
+    background-size: auto;
+}
+
+.containerAboutUs{
+    text-align: center;
+    color: white;
+}
+.bgaboutus{
+    background-color: rgb(32, 27, 44,1);
+}
+.helperss{
+    background-color: rgb(32, 27, 44,1);
+    height: 160px;
+    overflow: hidden;
+    display: block;
+    visibility: hidden;
+}
+
+.widthaboutus{
+    width: 800px;
+    text-align: left;
+    margin: 0 auto;
+}
+.widthaboutus p,h2{
+    padding-top: 25px;
+    Line-height: 28px;
+}
+
+
+
+.containerAboutUs > h1{
+    display: block;
+    padding: 20px 0;
+    background-color: rgb(85, 82, 82);
+    color: white;
+}
+
+@media all and (max-width: 825px){
+    .widthaboutus{
+        width: 500px;
+        height: auto;
+    }
+}
+
+
+@media all and (max-width: 500px){
+    .widthaboutus{
+        width: 300px;
+        height: auto;
+    }
+}
+
+/*footeraboutus-------------------footeraboutus*/
+
+
+#about_us .footAboutUs{
+    display: block;
+    position: relative;
+    bottom: 0;
+}
+
+
+
+/*LoginPage----------------------------------------------------------LoginPage*/
+#loginid{
+    background-image:none;
+    background-repeat:repeat;
+    background-attachment: scroll;
+    background-size: auto;
+}
+#loginid li a, #loginid .dropbtn {
+    padding: 17px 12px;
+    width: 155px;
+    font-size: 20px;
+}
+
+/*-----------------------------header*/
+
+#loginid.containerheaderr{
+    width: 100%; 
+    background-image: linear-gradient(to right,  #000080, #695980);
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+#loginid img.logoimg{
+    width: 220px;
+    height:90px;
+    padding: 2px 3px;
+}
+
+#loginid .headerkanan{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#loginid .regissternamee{
+    text-decoration: none;
+    color: rgba(255,255,255,1)
+}
+#loginid .loginName{
+    text-decoration: none;
+    color: rgba(255,255,255,1)
+}
+
+#loginid .buttonRegis{
+    background-color: #333;
+    color: rgba(255,255,255,1);
+    border-radius: 25px;
+    padding: 9px 30px;
+    font-size: 20px;
+    align-self:center;
+    margin-right: 30px;
+}
+
+#loginid .buttonLog{
+    background-color: #333;
+    color: rgba(255,255,255,1);
+    border-radius: 25px;
+    padding: 9px 30px;
+    font-size: 20px;
+    align-self:center;
+    margin-right: 20px;
+}
+
+
+/*content  login page*/
+@media all and (max-width: 600px){
+    #loginid .containerheaderr{
+        width: 100%;
+        background-color: #000080;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+    #loginid  img.logoimg{
+        width: 200px;
+        height:70px;
+        padding: 2px 3px;
+        margin-top: 15px;
+    }
+    #loginid .headerkanan{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+        margin-top: 15px;
+        color:white;
+        text-decoration: none;
+    }
+    #loginid .buttonLog{
+        margin-right: 0px;
+    }
+}
+
+
+.containerloginpage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+h1.logintxt{
+    font-size: 39px;
+}
+
+h2.emailtxt{
+    font-size: 23px;
+    font-weight: normal;
+    margin-top: 37px;
+}
+
+h2.passwordtxt{
+    font-size: 23px;
+    font-weight: normal;
+    margin-top: 35px;
+}
+
+input.passinput, input.mailinput{
+    margin-top: 15px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid black;
+    padding: 5px 5px;
+    font-size: 15px;
+    width: 250px;
+}
+
+button.loginbutton{
+    color: rgba(255,255,255,0.9);
+    background-color: #333;
+    font-size: 20px;
+    border-radius: 25px;
+    padding: 5px 50px;
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+
+.loginbuttonpagee{
+    color:white;
+    font-size: 26px;
+    text-decoration: none;
+    padding: 5px 20px;
+}
+
+a.registerlink{
+    text-decoration: none;
+    color:blue;
+}
+a.registerlink:hover{
+    text-decoration: none;
+    color: black;
+}
+
+p.promosi{
+    font-size:20px;
+}
+
+
+@media all and (min-width: 1400px){
+    .containerloginpage{
+        margin-top: 6%
+    }
+    h1.logintxt{
+        font-size: 45px; /*30*/
+    }
+    h2.emailtxt{
+        font-size: 26px; /*18*/
+        margin-top:35px;
+    }
+    h2.passwordtxt{
+        font-size: 26px; /*18*/
+        margin-top:35px;
+    }
+
+    input.passinput, input.mailinput{
+           width: 280px;
+           padding: 10px 0px;
+           font-size: 18px;
+    }
+
+    button.loginbutton{
+        font-size: 26px; /*20px*/
+        margin-top: 20px;
+        padding-top: 12px 20px;
+    }
+
+    p.promosi{
+        font-size: 20px;
+        margin-top: 15px;
+    }
+}
+
+/*loginpagefooter------------------------loginpagefooter*/
+#loginid > footer{
+    display: block;
+    position: relative;
+    margin-top: 100px; /*aa*/
+}
+
+
+
+/*MenuPage------------------------------------MenuPage--- */
+#menuid{
+    background-image: url(./images/background_menu.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.containersatu{
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  h1.burger{
+      margin-top: 19px;
+      font-size: 38px;
+  }
+  
+  .explanation{
+      width: 1000px;
+      text-align: center;
+      margin-top: 25px;
+  }
+  @media all and (max-width:1030px){
+      .explanation{
+          width: 500px;
+          text-align: center;
+          margin-top: 25px;
+      }
+  }
+  @media all and (max-width:510px){
+      .explanation{
+          width: 340px;
+          text-align: center;
+          margin-top: 25px;
+      }
+  }
+  
+
+  /*menu----------------------------------------menu*/
+  .containermenu{
+      display: flex;
+      flex-direction: row;
+      text-align: center;
+      color: black;
+      width: 80%;
+      height: auto;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: center;
+  }
+  
+  .menu {
+      display: flex;
+      flex-direction: column;
+      width: 200px;
+      height: 270px;
+      border-radius: 10px;
+      background-color: white;
+      align-items: center;
+      cursor: pointer;
+      margin-top: 50px;
+  }
+  .menu p{
+      margin-top: 30px;
+  }
+  p.popular{
+      margin-top: 7px;
+      position:relative;
+      background-color: rgba(245, 229, 27, 1);
+      width: 100%;
+      border-radius: 20px;
+      padding: 5px 0;
+      color: rgba(255,255,255,.8);
+      text-shadow: 2px 2px black;
+  }
+  
+  
+  img.kromburger{
+      width: 120px;
+      height: 130px;
+      margin-top: 10px;
+  }
+  img.burgerkeju{
+      width: 110px;
+      height:80px;
+      margin-top: 38px;
+      margin-bottom: 20px;
+  }
+  img.burgerayam{
+      width: 107px;
+      height: 97px;
+      margin-top: 28px;
+      margin-bottom: 14px;
+  }
+  img.bugerhoper{
+      width: 107px;
+      height: 90px;
+      margin-top: 23px;
+      margin-bottom: 23px;
+  }
+
+  @media all and (max-width: 500px){
+    .containermenu{
+        flex-direction: column;
+    }
+  }
+
+/*footermenupage----------------footermenupage*/
+#menuid > footer{
+    display: block;
+    position: relative;
+    margin-top: 200px;
+    margin-bottom: 0;
+}
+
+
+
+  
+
+ /*registerpage----------------------------registerpage--*/
+ #registerid{
+    background-image:none;
+    background-repeat:repeat;
+    background-attachment: scroll;
+    background-size: auto;
+ }
+
+ input[name=Gender]{
+    cursor: pointer;
+}
+.containerRegisterPage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+}
+
+input[name="NameRegister"],[name="EmailRegister"],[name="GenderRegister"],[name="PasswordRegister"],[name="ConfirmPasswordRegister"]{
+    width: 500px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1.8px solid black;
+    padding: 3px 5px;
+    font-size: 17px;
+}
+
+h1.regishead{
+    font-size: 34px;
+}
+p.namehead, .emailhead{
+    font-size: 20px;
+    margin-left: -437px;
+    margin-top: 15px;
+}
+p.gander{
+    margin-left: -431px;
+    font-size: 20px;
+    margin-top: 15px;
+}
+.radiobutton{
+    flex-direction: row;
+    margin-left: -326px;
+}
+label.gen {
+    margin-right: 10px;
+}
+.cityclass{
+    margin-left: -441px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+select[id="city"] {
+    width: 500px;
+    margin: 10px;
+    font-size: 15px;
+    padding: 3px 0;
+}
+select[id="city"]:focus {
+    min-width: 500px;
+    width: auto;
+}
+
+.pastxt{
+    margin-left: -410px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.conpastxt{
+    margin-left: -335px;
+    font-size: 20px;
+    margin-top: 16px;
+    margin-bottom: 0;
+}
+.RegisterButton{
+    background-color: #333;
+    padding: 7px 20px;
+    margin-top: 10px;
+    border-radius: 25px;
+}
+#registerid .registerbutton{
+    text-decoration: none;
+    color:white;
+    padding: 10px 20px;
+    font-size: 18px;
+}
+
+
+#registerid > footer{
+    display: block;
+    position: relative;
+    margin-top: 100px;
+}
+
+
+#registerid img.logoimg{
+    width: 200px;
+    height:70px;
+    padding: 2px 3px;
+}
+
+#registerid img{
+    margin-right: 20px;
+    color: white;
+    width:20px;
+    height: 20px
+}
+#registerid.author{
+    margin-top: 5px;
+    font-size: 13px;
+}
+
+#registerid .containerheaderr{
+    width: 100%; 
+    background-image: linear-gradient(to right,  #000080, #695980);
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+
+@media all and (max-width: 760px){
+    input[name="NameRegister"],[name="EmailRegister"],[name="GenderRegister"],[name="PasswordRegister"],[name="ConfirmPasswordRegister"]{
+        width: 360px;
+        font-size: 17px;
+    }
+    h1.regishead{
+        margin-bottom: 20px;
+    }
+    select[id="city"] {
+        width: 360px;
+    }
+    select[id="city"]:focus {
+        min-width: 360px;
+    }
+
+    p.namehead, .emailhead{
+        font-size: 20px;
+        margin-left: -297px;
+        margin-top: 15px;
+    }
+    p.gander{
+        margin-left: -291px;
+        font-size: 20px;
+        margin-top: 15px;
+    }
+    .radiobutton{
+        flex-direction: row;
+        margin-left: -196px;
+    }
+    .cityclass{
+        margin-left: -291px;
+        margin-top: 20px;
+    }
+    .pastxt{
+        margin-left: -250px;
+    }
+    .conpastxt{
+        margin-left: -185px;
+        margin-top: 18px;
+    }
+}
+
+
+@media all and (max-width: 545px){
+    input[name="NameRegister"],[name="EmailRegister"],[name="GenderRegister"],[name="PasswordRegister"],[name="ConfirmPasswordRegister"]{
+        width: 250px;
+        font-size: 17px;
+    }
+
+    select[id="city"]{
+        width: 250px;
+    }
+    select[id="city"]:focus {
+        min-width: 250px;
+    }
+
+    p.namehead, .emailhead{
+        font-size: 20px;
+        margin-left: -194px;
+        margin-top: 15px;
+    }
+    p.gander{
+        margin-left: -185px;
+        font-size: 20px;
+        margin-top: 15px;
+    }
+    .radiobutton{
+        flex-direction: row;
+        margin-left: -96px;
+    }
+    .cityclass{
+        margin-left: -191px;
+        margin-top: 20px;
+    }
+    .pastxt{
+        margin-left: -159px;
+    }
+    .conpastxt{
+        margin-left: -89px;
+        margin-top: 18px;
+    }
+}
+
+@media all and (max-width: 600px){
+    #registerid .containerheaderr{
+        width: 100%;
+        background-color: #000080;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+    #registerid img.logoimg{
+        width: 200px;
+        height:70px;
+        padding: 2px 3px;
+        margin-top: 15px;
+    }
+    #registerid .headerkanan{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+        margin-top: 15px;
+    }
+    #registerid .buttonLog{
+        margin-right: 0px;
+    }
+}

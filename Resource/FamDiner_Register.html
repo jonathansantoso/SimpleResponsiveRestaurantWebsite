@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="FamDiner_home.css">
+    <script src="https://kit.fontawesome.com/2902143893.js" crossorigin="anonymous"></script>
+    <title>Register</title>
+</head>
+
+<body id="registerid" onload='document.form1.emailtext.focus()'>
+    <!-------------------------------------Header-->
+    <div class="containerheaderr">
+        <img src="images/logo.svg" class="logoimg">
+        <div class="headerkanan">
+            <button class="buttonRegis"><a href="FamDiner_Register.html" class="regissternamee">Register</a></button>
+            <button class="buttonLog"><a href="FamDiner_Login.html" class="loginName">Login</a></button>
+        </div>
+    </div>
+    <!------------------------------navbar-->
+    <navbar>
+        <ul>
+            <li><a href="FamDiner_home.html">HOME</a></li>
+            <li class="dropdown"><a class="dropbtn">MENU <i class="fas fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="FamDiner_Menu.html">BURGER</a>
+                    <a href="FamDiner_Menu.html">RICE & PASTA</a>
+                    <a href="FamDiner_Menu.html">SEAFOOD</a>
+                </div>
+            </li>
+            <li><a href="FamDiner_About.html">ABOUT US</a></li>
+        </ul>
+    </navbar>
+
+    <!----------------------------registerpage-->
+    <form class="containerRegisterPage" id="form" action="/" method="GET" name="form1">
+        <h1 class="regishead">Register</h1>
+        <p class="namehead">Name:</p>
+        <p id="error1"></p><br>
+        <!------------------------------erorr1--->
+        <input id="textt1" type="text" name="NameRegister">
+        <!--java script class-->
+        <p class="emailhead">Email:</p><br>
+        <p id="error2" name="mailformat"></p><br>
+        <!------------------------------erorr2--->
+        <input type="text" name="EmailRegister">
+        <!--java script class-->
+        <p class="gander">Gender</p><br>
+        <div class="radiobutton">
+            <input type="radio" checked="checked" id="MaleID" name="Gender">
+            <label for="MaleID" class="gen">Male</label>
+            <input type="radio" checked="checked" id="FemaleID" name="Gender">
+            <label for="FemaleIDale" class="gen">Female</label>
+        </div>
+        <label for="city" class="cityclass">City:</label>
+        <!--java script class-->
+        <select id="city" name="citylist">
+            <option value="Jakarta">Jakarta</option>
+            <option value="Bandung">Bandung</option>
+            <option value="Others">Others</option>
+        </select>
+        <p class=pastxt>Password:</p>
+        <p id="error3"></p><br>
+        <!------------------------------erorr3--->
+        <input type="password" name="PasswordRegister" id="passwordinputRegister">
+        <!--java script class-->
+        <p class="conpastxt">Confirm Password:</p>
+        <p id="error4"></p><br>
+        <!------------------------------erorr4--->
+        <input type="password" name="ConfirmPasswordRegister" id="conPwdRegister">
+        <!--java script class-->
+        <!--asdddddddddddddddddddddddddddasdasasdasdsadasd-->
+        <button type="submit" value="validation" class="RegisterButton"
+            onclick="chkstr(), ValidateEmail(document.form1.EmailRegister), chkpwd(),chkConfirmPwd()"><a href=" #"
+                class="registerbutton">Register</a></button>
+        <!-- onclick="chkConfirmPwd() , chkpwd(), chkstr(), ValidateEmail(document.form1.EmailRegister)" -->
+    </form>
+    <!--------------------------------------FOOTER-->
+    <footer>
+        <div class="footcontainer">
+            <div class="icon">
+                <a href="#"><img src="./images/twitter.png"></a>
+                <a href="#"><img src="./images/facebook.png"></a>
+                <a href="#"><img src="./images/instagram.png"></a>
+            </div>
+            <p class="author">Copyright &copy; 2021 Jonathan. All Rights Reserved</p>
+        </div>
+    </footer>
+    <script src="FamDiner.js"></script>
+</body>
+
+</html>

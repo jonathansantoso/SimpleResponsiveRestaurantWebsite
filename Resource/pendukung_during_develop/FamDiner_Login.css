@@ -1,0 +1,268 @@
+*{
+    box-sizing: border-box;
+    font-family:Tahoma, sans-serif;
+    margin:0;
+    padding:0;
+}
+/*-----------------------------header*/
+
+.containerheaderr{
+    width: 100%; 
+    background-image: linear-gradient(to right,  #000080, #695980);
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+img.logoimg{
+    width: 220px;
+    height:90px;
+    padding: 2px 3px;
+}
+
+.headerkanan{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.regissternamee{
+    text-decoration: none;
+    color: rgba(255,255,255,1)
+}
+.loginName{
+    text-decoration: none;
+    color: rgba(255,255,255,1)
+}
+
+.buttonRegis{
+    background-color: #333;
+    color: rgba(255,255,255,1);
+    border-radius: 25px;
+    padding: 9px 30px;
+    font-size: 20px;
+    align-self:center;
+    margin-right: 30px;
+}
+
+.buttonLog{
+    background-color: #333;
+    color: rgba(255,255,255,1);
+    border-radius: 25px;
+    padding: 9px 30px;
+    font-size: 20px;
+    align-self:center;
+    margin-right: 20px;
+}
+
+@media all and (max-width: 600px){
+    .containerheaderr{
+        width: 100%;
+        background-color: #000080;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+    img.logoimg{
+        width: 200px;
+        height:70px;
+        padding: 2px 3px;
+        margin-top: 15px;
+    }
+    .headerkanan{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+        margin-top: 15px;
+    }
+    .buttonLog{
+        margin-right: 0px;
+    }
+}
+
+
+/*navbar-------------------------------------------------------navbar*/
+header{
+    background-color: white;
+}
+
+ul{
+    margin:0;
+    padding: 0;
+    list-style-type: none;
+    background-color: #333;
+    overflow: hidden;
+}
+
+li{
+    float: left;
+}
+
+li a, .dropbtn {
+    text-decoration: none;
+    color: white;
+    padding: 17px 12px;
+    display: inline-block;
+    text-align: center;
+    width: 155px;
+    font-size: 20px;
+}
+
+li a:hover, .dropdown:hover .dropbtn{
+    background-color: #1bf5ee;
+    color: black;
+}
+
+.dropbtn{
+    display: inline-block;
+}
+.dropdown-content{
+    position: absolute;
+    display: none;
+    min-width: 80px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a{
+    display: block;
+    padding: 12px 23px;
+    background-color: #333;
+    text-align: left;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+.dropdown-content a:hover{
+    background-color: black;
+    color:white;
+}
+
+
+/*------------------------------LoginPage*/
+.containerloginpage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+h1.logintxt{
+    font-size: 37px;
+    
+}
+
+h2.emailtxt{
+    font-size: 23px;
+    font-weight: normal;
+    margin-top: 37px;
+}
+
+h2.passwordtxt{
+    font-size: 23px;
+    font-weight: normal;
+    margin-top: 35px;
+}
+
+input.passinput, input.mailinput{
+    margin-top: 15px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid black;
+    padding: 5px 5px;
+    font-size: 15px;
+    width: 250px;
+}
+
+button.loginbutton{
+    color: rgba(255,255,255,0.9);
+    background-color: #333;
+    font-size: 20px;
+    border-radius: 25px;
+    padding: 5px 50px;
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+a.registerlink{
+    text-decoration: none;
+}
+p.promosi{
+    font-size:20px;
+}
+
+
+@media all and (min-width: 1400px){
+    .containerloginpage{
+        margin-top: 6%
+    }
+    h1.logintxt{
+        font-size: 45px; /*30*/
+    }
+    h2.emailtxt{
+        font-size: 26px; /*18*/
+        margin-top:35px;
+    }
+    h2.passwordtxt{
+        font-size: 26px; /*18*/
+        margin-top:35px;
+    }
+
+    input.passinput, input.mailinput{
+           width: 280px;
+           padding: 10px 0px;
+           font-size: 18px;
+    }
+
+    button.loginbutton{
+        font-size: 26px; /*20px*/
+        margin-top: 20px;
+        padding-top: 12px 20px;
+    }
+
+    p.promosi{
+        font-size: 20px;
+        margin-top: 15px;
+    }
+}
+
+/*-------------------------------footer*/
+
+footer{
+    position: absolute;
+    display:block;
+    bottom: 0;
+    width: 100%;
+}
+
+.footcontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #333;
+    padding:10px 0;
+    color: white;
+}
+
+footer img{
+    margin-right: 20px;
+    color: white;
+    width:20px;
+    height: 20px
+}
+.author{
+    margin-top: 5px;
+    font-size: 13px;
+}
+#loginid > footer{
+    display: block;
+    position: relative;
+    margin-top: 100px;
+}

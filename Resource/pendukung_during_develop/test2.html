@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #password {
+            width: 200px;
+            margin-top: 15px;
+        }
+
+        #name {
+            width: 200px;
+            margin-top: 15px;
+        }
+
+        label[for="nama"] {
+            background-color: cadetblue;
+            display: inline-block;
+            margin-top: 15px;
+        }
+
+        label[for="sandi"] {
+            background-color: cornflowerblue;
+            display: inline-block;
+            margin-top: 15px;
+        }
+
+        button[type="submit"] {
+            background-color: black;
+            width: 150px;
+            margin-top: 15px;
+
+        }
+
+        .registerbutton {
+            text-decoration: none;
+            color: white;
+            padding: 10px 10px;
+            font-size: 17px;
+            display: inline-block;
+        }
+
+        form[action="/"] {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+        }
+    </style>
+
+</head>
+
+<body onload='document.form1.emailtext.focus()'>
+    <div id="error"></div>
+    <form id="form" action="/" method="GET" name="form1">
+        <div>
+            <label for="nama">Name</label>
+            <div id="error1"></div><br>
+            <input type="text" id="name" name="nama">
+        </div>
+        <div name="form1" action="#">
+            <label for="emailtext">Email</label>
+            <div id="error4"></div><br>
+            <input type="text" id="email" name="emailtext">
+        </div>
+        <div>
+            <label for="sandi">Password</label>
+            <div id="error2"></div><br>
+            <input type="text" id="password" name="sandi">
+        </div>
+        <div>
+            <label for="ulangSandi">Confirm Password</label>
+            <div id="error3"></div><br>
+            <input type="text" id="confirmPassword" name="ulangSandi">
+        </div>
+        <button type="submit" value="validation"
+            onclick="chkConfirmPwd() , chkpwd(), chkstr(), ValidateEmail(document.form1.emailtext)"><a href="#"
+                class="registerbutton">register</a></button>
+    </form>
+
+    <script>
+
+
+        var form = document.getElementById('form')
+        var errorElement1 = document.getElementById('error1')
+        var errorElement2 = document.getElementById('error2')
+        var errorElement3 = document.getElementById('error3')
+        var errorElement4 = document.getElementById('error4')
+
+        chkstr = function (validation) {
+            var name = document.getElementById('name').value;
+            if (name == "" || name == null) {
+                errorElement1.innerHTML = "name harus diisi"
+                errorElement1.style.color = "Red";
+                return (true);
+            }
+            errorElement1.innerHTML = "";
+            errorElement1.style.color = "";
+            return (true);
+            chkpwd();
+        }
+
+
+        chkpwd = function (validation) {
+            var password = document.getElementById('password').value;
+            if (password == "" || password == null) {
+                errorElement2.innerHTML = "password harus diisi"
+                errorElement2.style.color = "Red";
+                return (true);
+            } if (password.length < 7) {
+                errorElement2.innerHTML = "password harus 8 character";
+                errorElement2.style.color = "Red";
+                return (true);
+            } if (password.search(/[0-9]/) == -1) {
+                errorElement2.innerHTML = "password harus ada angka";
+                errorElement2.style.color = "Red";
+                return (true);
+            } if (password.search(/[A-Z]/) == -1) {
+                errorElement2.innerHTML = "password harus ada huruf kapital"
+                errorElement2.style.color = "Red";
+                return (true);
+            }
+            errorElement2.innerHTML = ""
+            errorElement2.style.color = "";
+            return (true);
+            chkConfirmPwd();
+        }
+
+        chkConfirmPwd = function (validation) {
+            var pwd = document.getElementById('password').value;
+            var confirmPassword = document.getElementById('confirmPassword').value;
+            if (pwd != confirmPassword || pwd == null || pwd == "") {
+                errorElement3.innerHTML = "Password dan Confirm password tidak sinkron";
+                errorElement3.style.color = "red";
+                return (true);
+            }
+            errorElement3.innerHTML = "";
+            errorElement3.style.color = "";
+            return (true);
+        }
+
+        function ValidateEmail(inputText) {
+            var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+            if (inputText.value.match(mailformat)) {
+                errorElement4.innerHTML = "";
+                errorElement4.style.color = "";
+                document.form1.emailtext;
+            }
+            else {
+                errorElement4.innerHTML = "email tidak valid";
+                errorElement4.style.color = "red";
+                document.form1.emailtext;
+            }
+        }
+    </script>
+</body>
+
+</html>

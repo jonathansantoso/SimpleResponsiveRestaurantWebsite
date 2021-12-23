@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="FamDiner_home.css">
+    <script src="https://kit.fontawesome.com/2902143893.js" crossorigin="anonymous"></script>
+    <title>LOGIN</title>
+</head>
+
+<body id="loginid">
+    <!-------------------------------------Header-->
+    <div class="containerheaderr">
+        <img src="images/logo.svg" class="logoimg">
+        <div class="headerkanan">
+            <button class="buttonRegis"><a href="FamDiner_Register.html" class="regissternamee">Register</a></button>
+            <button class=" buttonLog"><a href="FamDiner_Login.html" class="loginName">Login</a></button>
+            <!--style=" text-decoration: none; color: rgba(255,255,255,1);-->
+        </div>
+    </div>
+    <!------------------------------navbar-->
+    <navbar>
+        <ul>
+            <li><a href="FamDiner_home.html">HOME</a></li>
+            <li class="dropdown"><a class="dropbtn">MENU <i class="fas fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="FamDiner_Menu.html">BURGER</a>
+                    <a href="FamDiner_Menu.html">RICE & PASTA</a>
+                    <a href="FamDiner_Menu.html">SEAFOOD</a>
+                </div>
+            </li>
+            <li><a href="FamDiner_About.html">ABOUT US</a></li>
+        </ul>
+    </navbar>
+    <!---------------------------------LoginPage-->
+    <div class="containerloginpage">
+        <h1 class="logintxt">Login</h1>
+        <h2 class="emailtxt">Email</h2>
+        <p id="error1"></p><br>
+        <input type="text" name="Email" class="mailinput" id="emailLoginPage">
+        <!--java script class-->
+        <h2 class="passwordtxt">Password</h2>
+        <p id="error2"></p><br>
+        <input type="password" name="Password" class="passinput" id="passwordLoginPage"><br>
+        <!--java script class-->
+        <button class="loginbutton" value="LoginCheck" onclick="chkEmailLogin(), chkPasswordLogin()"><a href="#"
+                class="loginbuttonpagee">Login</a></button>
+        <p class="promosi">Want to join us? Register <a href="FamDiner_Register.html" class="registerlink">Here!</a></p>
+    </div>
+
+    <!---------------------------------Footer----->
+    <footer>
+        <div class="footcontainer">
+            <div class="icon">
+                <a href="#"><img src="./images/twitter.png"></a>
+                <a href="#"><img src="./images/facebook.png"></a>
+                <a href="#"><img src="./images/instagram.png"></a>
+            </div>
+            <p class="author">Copyright &copy; 2021 Jonathan. All Rights Reserved</p>
+        </div>
+    </footer>
+    <script src="FamDiner.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,301 @@
+*{
+    box-sizing: border-box;
+    font-family:Tahoma, sans-serif;
+    margin:0;
+    padding:0;
+}
+
+/*-----------------------------header*/
+
+.containerheaderr{
+    width: 100%; 
+    background-image: linear-gradient(to right,  #000080, #695980);
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+img.logoimg{
+    width: 200px;
+    height:70px;
+    padding: 2px 3px;
+}
+
+.headerkanan{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.buttonRegis{
+    background-color: #333;
+    color: rgba(255,255,255,1);
+    border-radius: 25px;
+    padding: 6px 25px;
+    font-size: 17px;
+    align-self:center;
+    margin-right: 25px;
+}
+
+.buttonLog{
+    background-color: #333;
+    color: rgba(255,255,255,1);
+    border-radius: 25px;
+    padding: 6px 25px;
+    font-size: 17px;
+    align-self:center;
+    margin-right: 20px;
+}
+
+@media all and (max-width: 600px){
+    .containerheaderr{
+        width: 100%;
+        background-color: #000080;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+    img.logoimg{
+        width: 200px;
+        height:70px;
+        padding: 2px 3px;
+        margin-top: 15px;
+    }
+    .headerkanan{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+        margin-top: 15px;
+    }
+    .buttonLog{
+        margin-right: 0px;
+    }
+}
+
+
+/*------------------------------navbar*/
+
+header{
+    background-color: white;
+}
+
+ul{
+    margin:0;
+    padding: 0;
+    list-style-type: none;
+    background-color: #333;
+    overflow: hidden;
+}
+
+li{
+    float: left;
+}
+
+li a, .dropbtn {
+    text-decoration: none;
+    color: white;
+    padding: 14px 16px;
+    display: inline-block;
+    text-align: center;
+    width: 120px;
+}
+
+li a:hover, .dropdown:hover .dropbtn{
+    background-color: #1bf5ee;
+    color: black;
+}
+
+.dropbtn{
+    display: inline-block;
+}
+.dropdown-content{
+    position: absolute;
+    display: none;
+    min-width: 80px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a{
+    display: block;
+    padding: 12px 23px;
+    background-color: #333;
+    text-align: left;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+.dropdown-content a:hover{
+    background-color: black;
+    color:white;
+}
+
+
+
+
+ /*----------------------------registerpage--*/
+input[name=Gender]{
+    cursor: pointer;
+}
+.containerRegisterPage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+}
+
+input[name="NameRegister"],[name="EmailRegister"],[name="GenderRegister"],[name="PasswordRegister"],[name="ConfirmPasswordRegister"]{
+    width: 500px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1.8px solid black;
+    padding: 3px 5px;
+    font-size: 17px;
+}
+
+h1.regishead{
+    font-size: 30px;
+}
+p.namehead, .emailhead{
+    font-size: 20px;
+    margin-left: -437px;
+    margin-top: 15px;
+}
+p.gander{
+    margin-left: -431px;
+    font-size: 20px;
+    margin-top: 15px;
+}
+.radiobutton{
+    flex-direction: row;
+    margin-left: -326px;
+}
+label.gen {
+    margin-right: 10px;
+}
+.cityclass{
+    margin-left: -441px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+select[id="city"] {
+    width: 500px;
+    margin: 10px;
+    font-size: 15px;
+    padding: 3px 0;
+}
+select[id="city"]:focus {
+    min-width: 500px;
+    width: auto;
+}
+
+.pastxt{
+    margin-left: -410px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.conpastxt{
+    margin-left: -335px;
+    font-size: 20px;
+    margin-top: 16px;
+    margin-bottom: 0;
+}
+.RegisterButton{
+    color: white;
+    background-color: #333;
+    padding: 7px 37px;
+    margin-top: 10px;
+    border-radius: 25px;
+}
+
+
+@media all and (max-width: 760px){
+    input[name="NameRegister"],[name="EmailRegister"],[name="GenderRegister"],[name="PasswordRegister"],[name="ConfirmPasswordRegister"]{
+        width: 360px;
+        font-size: 17px;
+    }
+    h1.regishead{
+        margin-bottom: 20px;
+    }
+    select[id="city"] {
+        width: 360px;
+    }
+    select[id="city"]:focus {
+        min-width: 360px;
+    }
+
+    p.namehead, .emailhead{
+        font-size: 20px;
+        margin-left: -297px;
+        margin-top: 15px;
+    }
+    p.gander{
+        margin-left: -291px;
+        font-size: 20px;
+        margin-top: 15px;
+    }
+    .radiobutton{
+        flex-direction: row;
+        margin-left: -196px;
+    }
+    .cityclass{
+        margin-left: -291px;
+        margin-top: 20px;
+    }
+    .pastxt{
+        margin-left: -250px;
+    }
+    .conpastxt{
+        margin-left: -185px;
+        margin-top: 18px;
+    }
+}
+
+
+@media all and (max-width: 545px){
+    input[name="NameRegister"],[name="EmailRegister"],[name="GenderRegister"],[name="PasswordRegister"],[name="ConfirmPasswordRegister"]{
+        width: 250px;
+        font-size: 17px;
+    }
+
+    select[id="city"]{
+        width: 250px;
+    }
+    select[id="city"]:focus {
+        min-width: 250px;
+    }
+
+    p.namehead, .emailhead{
+        font-size: 20px;
+        margin-left: -194px;
+        margin-top: 15px;
+    }
+    p.gander{
+        margin-left: -185px;
+        font-size: 20px;
+        margin-top: 15px;
+    }
+    .radiobutton{
+        flex-direction: row;
+        margin-left: -96px;
+    }
+    .cityclass{
+        margin-left: -191px;
+        margin-top: 20px;
+    }
+    .pastxt{
+        margin-left: -159px;
+    }
+    .conpastxt{
+        margin-left: -89px;
+        margin-top: 18px;
+    }
+}
